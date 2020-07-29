@@ -1,0 +1,125 @@
+@import "variables";
+@import "container";
+
+html {
+  font-size: 18px !important;
+}
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+  text-align: center;
+}
+.main {
+  padding: 0 $mobilePad;
+  background: url("../images/bg-header-mobile.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+h1 {
+  font-size: 1.5rem;
+  line-height: 130%;
+  color: $darkGrayishBlue;
+  margin-bottom: 1rem;
+}
+h2 {
+  font-size: 1.5rem;
+  line-height: 130%;
+  color: $darkGrayishBlue;
+  margin-bottom: 1rem;
+}
+h3 {
+  @extend h2;
+  font-size: 1.25rem;
+}
+p {
+  font-size: 0.9rem;
+  margin-bottom: 3rem;
+  color: $grayishBlue;
+}
+.buttons {
+  width: 100%;
+  button {
+    width: 100%;
+    height: 3rem;
+    border-radius: 3rem;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    box-shadow: inset 0px -3px 0px 0px rgba(0, 0, 0, 0.26);
+  }
+}
+.button__ios {
+  background: $strongCyan;
+  margin-bottom: 1.2rem;
+}
+.button__mac {
+  background: $lightBlue;
+}
+img {
+  margin: auto;
+  margin-bottom: 3.5rem;
+  max-width: 100%;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+.home {
+  padding-top: 6rem;
+  margin-bottom: 10rem;
+}
+
+.snippets {
+  margin-bottom: 10rem;
+}
+.workflow {
+  margin-bottom: 8rem;
+}
+.brands {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8rem;
+  img {
+    max-width: 35%;
+  }
+}
+.download {
+  margin-bottom: 10rem;
+}
+footer {
+  background: $lightGrey;
+  display: flex;
+  flex-direction: column;
+  padding-top: 2.5rem;
+  img {
+    max-width: 13.5%;
+    margin-bottom: 2rem;
+  }
+  .footer__links {
+    display: flex;
+    flex-direction: column;
+    div {
+      display: flex;
+      flex-direction: column;
+      a {
+        text-decoration: none;
+        color: $darkGrayishBlue;
+        margin-bottom: 1rem;
+      }
+    }
+    .footer__social-media {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin-top: 2rem;
+      margin-bottom: 3rem;
+      .icon {
+        font-size: 1.4rem;
+        color: $darkGrayishBlue;
+        margin: 0 1rem;
+      }
+    }
+  }
+}
+
+@import "desktop-view";
