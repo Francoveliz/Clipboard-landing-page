@@ -40,6 +40,12 @@
       color: #fff;
       font-weight: 600;
       box-shadow: inset 0px -3px 0px 0px rgba(0, 0, 0, 0.26);
+      transition: 0.5s ease;
+      &:hover {
+        filter: brightness(1.1);
+        transform: translateY(-1px);
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.33);
+      }
     }
   }
   .button__ios {
@@ -80,25 +86,102 @@
     }
   }
   .workflow {
-    margin-bottom: 8rem;
+    margin-bottom: 10rem;
+    p {
+      margin-bottom: 4rem;
+    }
     ul {
       display: flex;
       flex-direction: row;
-      align-items: center;
+      align-items: flex-start;
       justify-content: center;
+      margin: 0 $desktopPad;
+
       li {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        max-width: 33%;
+        height: 100%;
+
         img {
-          margin: 0;
         }
         h3 {
-          margin: 0;
         }
         p {
-          margin: 0;
+          font-size: 0.9rem;
+          margin: auto;
+          width: 90%;
+          margin-bottom: 0;
+          line-height: 170%;
+        }
+      }
+    }
+  }
+  .brands {
+    display: flex;
+    flex-direction: row;
+    margin: 0 $desktopPad;
+    margin-bottom: 6rem;
+    img {
+      max-width: 35%;
+    }
+  }
+  .download {
+    margin-bottom: 8rem;
+  }
+
+  footer {
+    background: $lightGrey;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 2rem $desktopPad;
+
+    img {
+      width: 3rem;
+      height: 3rem;
+      margin: 0;
+      margin-right: 6rem;
+    }
+    .footer__links {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      width: 100%;
+
+      div {
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        margin-right: 4rem;
+        a {
+          text-decoration: none;
+          color: $darkGrayishBlue;
+          margin-bottom: 0.5rem;
+          &:hover {
+            color: $strongCyan;
+          }
+        }
+      }
+    }
+    .footer__social-media {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin-top: 0;
+      margin-bottom: 0;
+
+      .icon {
+        font-size: 1.4rem;
+        color: $darkGrayishBlue;
+        margin: 0;
+        margin-left: 1.2rem;
+        cursor: pointer;
+        &:hover {
+          color: $strongCyan;
         }
       }
     }
